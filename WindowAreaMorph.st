@@ -1,4 +1,4 @@
-'From Cuis 5.0 [latest update: #4372] on 4 September 2020 at 8:25:09 pm'!
+'From Cuis 5.0 [latest update: #4372] on 5 September 2020 at 12:39:04 am'!
 !classDefinition: #WindowAreaMorph category: #'Morphic-Views'!
 PluggableLayoutMorph subclass: #WindowAreaMorph
 	instanceVariableNames: ''
@@ -28,6 +28,15 @@ layoutMorph
 !WindowAreaMorph methodsFor: 'as yet unclassified' stamp: 'MM 9/4/2020 17:49:48'!
 setLabel: aString
 	"do  nothing"! !
+
+!WindowAreaMorph methodsFor: 'as yet unclassified' stamp: 'MM 9/5/2020 00:38:01'!
+textBackgroundColor
+
+	^Theme current paneBackgroundFrom: self widgetsColor! !
+
+!WindowAreaMorph methodsFor: 'as yet unclassified' stamp: 'MM 9/5/2020 00:38:25'!
+widgetsColor
+	^ Color lightGray! !
 
 "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
 
